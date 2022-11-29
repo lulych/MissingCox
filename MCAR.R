@@ -54,6 +54,8 @@ colnames(meantimes) <- metodo
 
 #-------------------------------------------------------------------------------
 #Simulate data for the covariates and the times and states for prefixed beta's 
+#It is suggested to start the iteration with the statement for (s in 1:sim){set.seed(s) ... } 
+#This will further ensure comparability among imputation methods.
 for (s in 1:sim){
 X1 <- rnorm(n = n, mean = 0, sd = 1)
 print (c(s,"X1 ok"))
